@@ -154,5 +154,11 @@ function setupEventListeners() {
     });
 }
 
-// Iniciar aplicación al cargar la ventana
+// Iniciar aplicación al cargar la ventana  bienvenida
 window.onload = init;
+
+setTimeout(() => {
+    const splash = document.getElementById('splash-screen');
+    splash.style.opacity = '0';
+    setTimeout(() => splash.remove(), 500);
+}, 2500); // Duración de la bienvenida

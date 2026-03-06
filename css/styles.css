@@ -16,6 +16,48 @@ body {
     overflow-x: hidden;
 }
 
+#splash-screen {
+    position: fixed;
+    inset: 0;
+    background: var(--green-forest);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+.pulse-logo {
+    width: 150px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+.loader-line {
+    width: 100px;
+    height: 3px;
+    background: var(--orange-fresh);
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.loader-line::after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes pulse { 
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes loading {
+    100% { left: 100%; }
+}
+
 /* Hero Banner */
 /* 1. Hero con Slider de Fondo */
 .hero-landing {
@@ -43,14 +85,47 @@ body {
 
 .hero-slider img.active { opacity: 1; }
 
+/* --- Ajustes del Hero (Contenido Estático) --- */
 .hero-content {
     position: relative;
     z-index: 2;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo horizontalmente */
+    justify-content: center;
     color: white;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-.logo-hero { width: 120px; height: auto; display: block; margin: 0 auto; }
+.logo-hero { 
+    width: 120px; /* Tamaño móvil */
+    height: auto;
+    margin-bottom: 2px;
+    transition: width 0.3s ease;
+     
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Tamaño móvil */
+    line-height: 1.7;
+}
+
+.hero-content p {
+    margin: -5px 0 0 0; /* Sube el párrafo hacia el h1 */
+    font-size: 1rem; /* Más grande en móvil */
+    font-weight: 400;
+    text-align: center;
+}
+
+/* --- Ajustes Escritorio (Desktop) --- */
+@media (min-width: 1024px) {
+    .logo-hero { width: 155px; } /* Logo más grande en PC */
+    .hero-content h1 { font-size: 3rem; } /* H1 imponente en PC */
+    .hero-content p { font-size: 1.4rem; }
+}
 
 
 /* Bottom Sheet Modal */
@@ -76,6 +151,14 @@ body {
     filter: brightness(0.9);
 }
 
+.category-title {
+    margin: 30px 15px 15px 15px; /* Alineado con el margen de las cards (15px) */
+    font-size: 1.3rem;
+    color: var(--green-forest);
+    border-left: 4px solid var(--orange-fresh); /* Detalle visual premium */
+    padding-left: 10px;
+}
+
 /* 3. Modal "Bottom Sheet" Premium (Tipo Rappi) */
 .modal {
     position: fixed;
@@ -88,26 +171,46 @@ body {
 
 .modal.hidden { visibility: hidden; }
 
+/* --- Modal Background --- */
 .modal-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(2px);
+    background: rgba(45, 90, 39, 0.4); /* Verde bosque con transparencia */
+    backdrop-filter: blur(4px);
 }
 
+/* --- Modal Card --- */
 .modal-card {
     position: relative;
     width: 100%;
-    background: #fff5e2;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding: 20px;
+    background: #fcdbab; /* Champán semi claro muy elegante */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0 -10px 25px rgba(0,0,0,0.1);
     transform: translateY(100%); /* Empieza abajo */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .modal.active .modal-card {
     transform: translateY(0); /* Sube */
+}
+
+/* Control de tamaño en ESCRITORIO */
+@media (min-width: 768px) {
+    .modal {
+        align-items: center; /* Centra el modal en medio de la pantalla en PC */
+    }
+    .modal-card {
+        width: 450px; /* Ancho fijo tipo celular en PC */
+        border-radius: 25px; /* Bordes redondeados completos en PC */
+        margin: auto;
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+    }
+    .modal.active .modal-card {
+        transform: scale(1); /* Animación de zoom en PC */
+    }
 }
 
 .modal-handle {
@@ -117,19 +220,47 @@ body {
 
 #modal-price { 
     color: #FF8C00 !important; /* Naranja Fresh forzado */
-    font-size: 1.5rem; font-weight: bold; 
-}
-
-.modal-info { padding: 25px; }
-.modal-info h2 { color: var(--green-forest); font-size: 1.5rem; margin-bottom: 10px; }
-.modal-info p { color: #02270d; line-height: 1.5; margin-bottom: 20px; }
-#modal-price { 
-    font-size: 1.4rem; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
     color: var(--orange-fresh) !important; /* Forzamos color naranja */
     font-weight: 700; 
 }
 
+.modal-info { padding: 25px; }
+/* --- Texto dentro del Modal --- */
+.modal-info h2 {
+    margin-top: -10px; /* Sube el título h1 del modal */
+    font-size: 1.6rem;
+    color: var(--green-forest);
+}
+.modal-info p {
+    font-size: 1rem; /* Un poco más grande para lectura fácil */
+    line-height: 1.5;
+    color: #444;
+}
 
+/* Ajuste para la imagen dentro del modal */
+#modal-img-container {
+    width: 100%;
+    max-height: 250px; /* Limita la altura */
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    display: block;
+}
+
+/* En escritorio, ajustamos el contenedor del modal */
+@media (min-width: 768px) {
+    .modal-card {
+        max-height: 90vh;
+        overflow-y: auto; /* Permite scroll interno si el texto es largo */
+    }
+}
 
 /* Sección Categorías (Estilo imagen anexada) */
 .categories-section { padding: 20px 15px; }
@@ -208,12 +339,22 @@ body {
     pointer-events: none;
 }
 
+/* Ajuste para que no cubra toda la pantalla en PC */
 .modal-card {
-    background: white;
     width: 100%;
+    max-width: 500px; /* Tamaño máximo en escritorio */
+    margin: 0 auto;   /* Centra la card */
+    background: #fff;
     border-radius: 25px 25px 0 0;
     position: relative;
-    padding-bottom: 20px;
+}
+
+/* Fix para la imagen del modal */
+.modal-main-img {
+    width: 100%;
+    height: 250px;    /* Altura fija para control */
+    object-fit: cover; /* Corta la imagen elegantemente sin deformar */
+    display: block;
 }
 
 .close-btn {
@@ -223,6 +364,70 @@ body {
     font-size: 1.2rem; z-index: 10;
 }
 
+/* ICONO DEL WhatsApp "Solo Domicilios"--> se usa un "tooltip" animado al lado del icono. */
 .wa-float { position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 100; }
+.wa-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.wa-badge {
+    background: #25d366;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 15px 15px 0 15px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+    /* Animación de "Asomarse y Guardarse" */
+    animation: slideInOut 6s infinite ease-in-out;
+    transform-origin: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes slideInOut {
+    0%, 10% { transform: scaleX(0); opacity: 0; } /* Oculto */
+    20%, 80% { transform: scaleX(1); opacity: 1; } /* Visible */
+    90%, 100% { transform: scaleX(0); opacity: 0; } /* Se guarda */
+}
+
+/*.wa-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.wa-tooltip {
+    background: white;
+    color: var(--green-forest);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 10px;
+    box-shadow: var(--shadow);
+    white-space: nowrap;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+}   */
+
+
+
+
 
 

@@ -27,47 +27,47 @@ const menuData = {
             ]
         },
         {
-            "nombre": "Hamburguesas",
-            "img": "img/cat-hamburguesa.svg",
-            "productos": [
-                { "nombre": "Sencilla", "precio": "$14.000", "desc": "Carne, quesillo, mortadela, jamón y verduras.", "img": "img/h3.svg" },
-                { "nombre": "Unión Salvaje", "precio": "$31.000", "desc": "Carne suiza, tocineta, cheddar y salsas de la casa.", "img": "img/hamburgue.WebP" },
-                { "nombre": "Willy", "precio": "$40.000", "desc": "La más completa: Doble carne, huevo, cheddar y papas.", "img": "img/hamburgue.WebP" }
-            ]
-        },
-        {
-            "nombre": "Perros Calientes",
-            "img": "img/cat-perro.WebP",
-            "productos": [
-                { "nombre": "Sencillo", "precio": "$10.000", "desc": "Salchicha, queso costeño, papa ripio, lechuga.", "img": "img/perro2.WebP" },
-                { "nombre": "Especial", "precio": "$12.000", "desc": "Salchicha long, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.WebP" },
-                { "nombre": "Choriperro", "precio": "$15.000", "desc": "Chorizo, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.WebP" },
-                { "nombre": "Mexicano", "precio": "$13.000", "desc": "Salchicha long, chimichurri, queso costeño, maíz picante.", "img": "img/perro2.WebP" }
-            ]
-        },
-        {
-            "nombre": "Salchipapas",
-            "img": "img/s1.WebP",
-            "productos": [
-                { "nombre": "Kids La Unión", "precio": "$16.000", "desc": "Lomo BBQ, chorizo, ranchera y queso gratinado.", "img": "img/s1.WebP" },
-                { "nombre": "La Unión Personal", "precio": "$28.000", "desc": "Lomo, chorizo, ranchera, tocineta y papas francesas.", "img": "img/s2.WebP" }
-            ]
-        },
-        {
             "nombre": "Asados",
-            "img": "img/cat-asados.svg",
+            "img": "img/cat-asados.webp",
             "productos": [
-                { "nombre": "Carne Asada", "precio": "$26.000", "desc": "250 gr de carne, papas o patacón, ensalada.", "img": "img/carne_asada.WebP" },
-                { "nombre": "Pechuga Asada", "precio": "$24.000", "desc": "250 gr de pechuga, papas o patacón, ensalada.", "img": "img/pechuga_asada.WebP" },
+                { "nombre": "Carne Asada", "precio": "$26.000", "desc": "250 gr de carne, papas o patacón, ensalada.", "img": "img/carne_asada.webp" },
+                { "nombre": "Pechuga Asada", "precio": "$24.000", "desc": "250 gr de pechuga, papas o patacón, ensalada.", "img": "img/pechuga_asada.webp" },
                 { "nombre": "Picada", "precio": "$27.000", "desc": "Carne, pechuga, cerdo, papas a la francesa, ensalada.", "img": "img/picada.svg" }
             ]
         },
         {
-            "nombre": "Arepa y Patacón",
-            "img": "img/cat-arepas.WebP",
+            "nombre": "Salchipapas",
+            "img": "img/s1.webp",
             "productos": [
-                { "nombre": "Arepa Rellena", "precio": "$14.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, huevo de codorniz, queso costeño.", "img": "img/arepas.svg" },
-                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Pollo, carne, chorizo, butifarra, queso costeño, lechuga y salsas.", "img": "img/patacon.svg" }
+                { "nombre": "Kids La Unión", "precio": "$16.000", "desc": "Lomo BBQ, chorizo, ranchera y queso gratinado.", "img": "img/s1.webp" },
+                { "nombre": "La Unión Personal", "precio": "$28.000", "desc": "Lomo, chorizo, ranchera, tocineta y papas francesas.", "img": "img/s2.webp" }
+            ]
+        },
+        {
+            "nombre": "Arepa y Patacón",
+            "img": "img/cat-arepas.webp",
+            "productos": [
+                { "nombre": "Arepa Rellena", "precio": "$14.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, huevo de codorniz, queso costeño.", "img": "img/arepas.webp" },
+                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Pollo, carne, chorizo, butifarra, queso costeño, lechuga y salsas.", "img": "img/patacon.webp" }
+            ]
+        },
+        {
+            "nombre": "Hamburguesas",
+            "img": "img/cat-hamburguesas.webp",
+            "productos": [
+                { "nombre": "Sencilla", "precio": "$14.000", "desc": "Carne, quesillo, mortadela, jamón y verduras.", "img": "img/h3.svg" },
+                { "nombre": "Unión Salvaje", "precio": "$31.000", "desc": "Carne suiza, tocineta, cheddar y salsas de la casa.", "img": "img/h2.webp" },
+                { "nombre": "Willy", "precio": "$40.000", "desc": "La más completa: Doble carne, huevo, cheddar y papas.", "img": "img/h2.webp" }
+            ]
+        },
+        {
+            "nombre": "Perros Calientes",
+            "img": "img/perro2.webp",
+            "productos": [
+                { "nombre": "Sencillo", "precio": "$10.000", "desc": "Salchicha, queso costeño, papa ripio, lechuga.", "img": "img/perro2.webp" },
+                { "nombre": "Especial", "precio": "$12.000", "desc": "Salchicha long, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.webp" },
+                { "nombre": "Choriperro", "precio": "$15.000", "desc": "Chorizo, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.webp" },
+                { "nombre": "Mexicano", "precio": "$13.000", "desc": "Salchicha long, chimichurri, queso costeño, maíz picante.", "img": "img/perro2.webp" }
             ]
         },
         {
@@ -84,9 +84,9 @@ const menuData = {
           // Banner Promocionales
     "banners": [
         "img/cat-cafeteria.svg",
-        "img/pechuga_asada.svg",
+        "img/pechuga_asada.webp",
         "img/mandarina.svg",
-        "img/s1.svg",
+        "img/s1.webp",
         "img/naranja.svg",
         "img/arepas.WebP"
     ]

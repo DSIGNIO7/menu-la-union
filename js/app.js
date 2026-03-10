@@ -44,7 +44,13 @@ function renderMenu() {
         const section = document.createElement('section');
         section.id = `sec-${cat.nombre.replace(/\s+/g, '')}`;
         section.className = 'menu-section';
-        section.innerHTML = `<h2 class="category-title">${cat.nombre}</h2>`;
+        // Se incluye iconos
+        section.innerHTML = `
+          <h2 class="category-title">
+            <span class="category-icon">${cat.icono}</span>  
+            ${cat.nombre}
+          </h2>
+        `;
 
         const productsGrid = document.createElement('div');
         productsGrid.className = 'products-grid';
@@ -80,7 +86,7 @@ function renderMenu() {
 function initHeroSlider() {
     const slider = document.getElementById('hero-slider');
     // Si no tienes banners definidos en data.js, usa estos por defecto
-    const bgImages = menuData.banners || ['img/s1.svg', 'img/naranja.svg', 'img/h2.svg', 'img/mandarina.svg', 'img/cubano.svg', 'img/arepas.svg'];
+    const bgImages = menuData.banners || ['img/s1.webp', 'img/pechuga_asada.webp', 'img/naranja.svg', 'img/h2.svg', 'img/mandarina.svg', 'img/cubano.svg', 'img/arepas.webp'];
     
     slider.innerHTML = ''; // Limpiar
 

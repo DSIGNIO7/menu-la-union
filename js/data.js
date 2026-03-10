@@ -2,32 +2,82 @@ const menuData = {
     "categorias": [
         {
             "nombre": "Jugos Naturales",
-            "img": "img/cat-jugos.svg",
+            "icono": "🥤",
+            "img": "img/cat-jugos.webp",
             "productos": [
-                { "nombre": "Zapote", "precio": "$8.000", "desc": "Jugo 100% natural y fresco.", "img": "img/zapote.svg" },
-                { "nombre": "Níspero", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.svg" },
-                { "nombre": "Limonada Natural", "precio": "$7.000", "desc": "Refrescante toque cítrico.", "img": "img/limonada.svg" }
+                { "nombre": "Zapote", "precio": "$8.000", "desc": "Jugo 100% natural y fresco.", "img": "img/zapote.webp" },
+                { "nombre": "Níspero", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
+                { "nombre": "Milo", "precio": "$7.000", "desc": "Cremosa y refrescante.", "img": "img/milo.webp" },
+                { "nombre": "Limonada Natural", "precio": "$7.000", "desc": "Refrescante toque cítrico.", "img": "img/naranja.webp" }
             ]
         },
         {
             "nombre": "Jugos Combinados",
-            "img": "img/cat-combinados.svg",
+            "icono": "🥭",
+            "img": "img/cat-combinados.webp",
             "productos": [
-                { "nombre": "Limonada Cerezada", "precio": "$9.000", "desc": "Combinación refrescante con cereza.", "img": "img/limonada_cerezada.svg" },
-                { "nombre": "Limonada de Coco", "precio": "$10.000", "desc": "Cremosa y refrescante.", "img": "img/guanabana.svg" },
-                { "nombre": "Borojó Completo", "precio": "$9.000", "desc": "Kola granulada, vino sansón, miel y más.", "img": "img/borojo_comp.svg" }
+                { "nombre": "Limonada Cerezada", "precio": "$9.000", "desc": "Combinación refrescante con cereza.", "img": "img/l-cerezada.webp" },
+                { "nombre": "Limonada de Coco", "precio": "$10.000", "desc": "Cremosa y refrescante.", "img": "img/guanabana.webp" },
+                { "nombre": "Milo", "precio": "$7.000", "desc": "Cremosa y refrescante.", "img": "img/milo.webp" },
+                { "nombre": "Borojó Completo", "precio": "$9.000", "desc": "Kola granulada, vino sansón, miel y más.", "img": "img/borojo-comp.webp" }
             ]
         },
         {
             "nombre": "Sandwichs",
-            "img": "img/cat-sandwich.svg",
+            "icono": "🥪",
+            "img": "img/cat-sandwich.webp",
             "productos": [
-                { "nombre": "Q'Unión", "precio": "$16.000", "desc": "Pan cubano, salsa de la casa, carne, quesillo, jamón y verduras.", "img": "img/cubano.svg" },
-                { "nombre": "Cubano", "precio": "$13.000", "desc": "Pan cubano, pollo, quesillo, jamón y verduras.", "img": "img/qbano.svg" }
+                { "nombre": "Q'Unión", "precio": "$16.000", "desc": "Pan cubano, salsa de la casa, carne, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/qbano.webp" },
+                { "nombre": "Cubano", "precio": "$13.000", "desc": "Pan cubano, salsa de la casa, pollo, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/cubano.webp" },
+                { "nombre": "Mini-Cubano", "precio": "$10.000", "desc": "Pan tajado, salsa de la casa, pollo, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/cubano.svg" },
+                { "nombre": "Mini-Cubano Unión", "precio": "$13.000", "desc": "Pan tajado, salsa de la casa, carne, quesillo, jamón, Lechuga, Tomate y Cebolla.", "img": "img/qbano.svg" },
+                { "nombre": "Especial", "precio": "$4.500", "desc": "Pan tajado, mantequilla, jamón, queso, mortadela.", "img": "img/especial.webp" },
+                { "nombre": "Sencillo", "precio": "$3.500", "desc": "Pan tajado, mantequilla, mortadela y queso.", "img": "img/sencillo.webp" },
+                { "nombre": "Jamón Queso", "precio": "$4.000", "desc": "Pan tajado, mantequilla, jamón y queso.", "img": "img/jamon.webp" },
+                { "nombre": "Solo Mortadela", "precio": "$3.500", "desc": "Pan tajado, mantequilla, Doble porción de mortadela.", "img": "img/cubano.svg" },
+                { "nombre": "Solo Jamón", "precio": "$4.000", "desc": "Pan tajado, mantequilla, Doble porción de Jamón.", "img": "img/qbano.svg" },
+                { "nombre": "Solo Queso", "precio": "$4.000", "desc": "Pan tajado, mantequilla, Doble porción de Queso.", "img": "img/s-queso.webp" }
+            ]
+        },
+        {
+            "nombre": "Arepa y Patacón",
+            "icono": "🫓",
+            "img": "img/cat-arepas.webp",
+            "productos": [
+                { "nombre": "Patacón Mini", "precio": "$15.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, queso costeño, lechuga, salsas.", "img": "img/patacon.webp" },
+                { "nombre": "Arepa Rellena", "precio": "$14.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, huevo de codorniz, queso costeño, lechuga, salsas.", "img": "img/arepas.webp" },
+                { "nombre": "Arepa Loca", "precio": "$22.000", "desc": "Pollo a la plancha, carne a la plancha, chicharón, tocineta, huevo de codorniz, chorizo, butifarra, salchicha super, queso costeño, lechuga, salsa.", "img": "img/arepas.webp" },
+                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Pollo, carne, chorizo, butifarra, queso costeño, lechuga, salsas.", "img": "img/patacon.webp" },
+                { "nombre": "Porción de papas", "precio": "$7.000", "desc": "Porción de papas a la francesa.", "img": "img/arepas.webp" },
+                { "nombre": "Porción de Patacón", "precio": "$7.000", "desc": "Porción de Patacones.", "img": "img/arepas.webp" }
+            ]
+        },
+        {
+            "nombre": "Hamburguesas",
+            "icono": "🍔",
+            "img": "img/cat-hamburguesas.webp",
+            "productos": [
+                { "nombre": "Sencilla", "precio": "$14.000", "desc": "Carne, quesillo, mortadela, jamón, lechuga, cebolla, tomate, y salsas.", "img": "img/h3.svg" },
+                { "nombre": "Especial", "precio": "$21.000", "desc": "Carne, jamón, tocineta, quesillo, lechuga, cebolla, tomate, salsas, papas a la francesa.", "img": "img/h3.svg" },
+                { "nombre": "Pollo", "precio": "$21.000", "desc": "Pollo, jamón, quesillo, lechuga, cebolla, tomate, salsas, papas a la francesa.", "img": "img/h3.svg" },
+                { "nombre": "Mixta", "precio": "$26.000", "desc": "Carne, pollo, jamón, tocineta, quesillo, lechuga, cebolla, tomate, salsas, papas a la francesa.", "img": "img/h3.svg" },
+                { "nombre": "Doble Carne", "precio": "$26.000", "desc": "Doble Carne, jamón, tocineta, quesillo, lechuga, cebolla, tomate, salsas, papas a la francesa.", "img": "img/h3.svg" },
+                { "nombre": "Unión Salvaje", "precio": "$31.000", "desc": "Carne suiza, tocineta, cheddar y salsas de la casa.", "img": "img/h2.webp" },
+                { "nombre": "Willy", "precio": "$40.000", "desc": "La más completa: Pan, carne-suiza, tocineta, queso chédar(2), lechuga, cebolla grillet, tomate, salsa de la casa,(Opcinal Mielmostaza), papas a la francesa.", "img": "img/h2.webp" }
+            ]
+        },
+        {
+            "nombre": "Salchipapas",
+            "icono": "🍟",
+            "img": "img/s1.webp",
+            "productos": [
+                { "nombre": "Kids La Unión", "precio": "$16.000", "desc": "Lomo BBQ, chorizo, ranchera y queso gratinado.", "img": "img/s1.webp" },
+                { "nombre": "La Unión Personal", "precio": "$28.000", "desc": "Lomo, chorizo, ranchera, tocineta y papas francesas.", "img": "img/s2.webp" }
             ]
         },
         {
             "nombre": "Asados",
+            "icono": "🔥",
             "img": "img/cat-asados.webp",
             "productos": [
                 { "nombre": "Carne Asada", "precio": "$26.000", "desc": "250 gr de carne, papas o patacón, ensalada.", "img": "img/carne_asada.webp" },
@@ -36,46 +86,55 @@ const menuData = {
             ]
         },
         {
-            "nombre": "Salchipapas",
-            "img": "img/s1.webp",
-            "productos": [
-                { "nombre": "Kids La Unión", "precio": "$16.000", "desc": "Lomo BBQ, chorizo, ranchera y queso gratinado.", "img": "img/s1.webp" },
-                { "nombre": "La Unión Personal", "precio": "$28.000", "desc": "Lomo, chorizo, ranchera, tocineta y papas francesas.", "img": "img/s2.webp" }
-            ]
-        },
-        {
-            "nombre": "Arepa y Patacón",
-            "img": "img/cat-arepas.webp",
-            "productos": [
-                { "nombre": "Arepa Rellena", "precio": "$14.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, huevo de codorniz, queso costeño.", "img": "img/arepas.webp" },
-                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Pollo, carne, chorizo, butifarra, queso costeño, lechuga y salsas.", "img": "img/patacon.webp" }
-            ]
-        },
-        {
-            "nombre": "Hamburguesas",
-            "img": "img/cat-hamburguesas.webp",
-            "productos": [
-                { "nombre": "Sencilla", "precio": "$14.000", "desc": "Carne, quesillo, mortadela, jamón y verduras.", "img": "img/h3.svg" },
-                { "nombre": "Unión Salvaje", "precio": "$31.000", "desc": "Carne suiza, tocineta, cheddar y salsas de la casa.", "img": "img/h2.webp" },
-                { "nombre": "Willy", "precio": "$40.000", "desc": "La más completa: Doble carne, huevo, cheddar y papas.", "img": "img/h2.webp" }
-            ]
-        },
-        {
             "nombre": "Perros Calientes",
+            "icono": "🌭",
             "img": "img/perro2.webp",
             "productos": [
                 { "nombre": "Sencillo", "precio": "$10.000", "desc": "Salchicha, queso costeño, papa ripio, lechuga.", "img": "img/perro2.webp" },
                 { "nombre": "Especial", "precio": "$12.000", "desc": "Salchicha long, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.webp" },
-                { "nombre": "Choriperro", "precio": "$15.000", "desc": "Chorizo, jamón, queso mozzarella, papa ripio, lechuga.", "img": "img/perro2.webp" },
-                { "nombre": "Mexicano", "precio": "$13.000", "desc": "Salchicha long, chimichurri, queso costeño, maíz picante.", "img": "img/perro2.webp" }
+                { "nombre": "Choriperro", "precio": "$15.000", "desc": "Chorizo, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" },
+                { "nombre": "ButiPerro", "precio": "$13.000", "desc": "Butifarra, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" },
+                { "nombre": "Ranchero", "precio": "$15.000", "desc": "Salchicha Ranchera, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" },
+                { "nombre": "Hawaiano", "precio": "$14.000", "desc": "Salchicha long, piña, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" },
+                { "nombre": "Mexicano", "precio": "$13.000", "desc": "Salchicha long, chimichurri, queso costeño, maíz picante.", "img": "img/perro2.webp" },
+                { "nombre": "Americano", "precio": "$15.000", "desc": "Salchicha Americana, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" },
+                { "nombre": "Italohawaiano", "precio": "$15.000", "desc": "Salchicha long, piña, jamón, tocineta, lechuga, queso mozzarella, papa ripio, salsas.", "img": "img/perro2.webp" },
+                { "nombre": "Suizo", "precio": "$15.000", "desc": "Salchicha suiza, jamón, queso mozzarella, lechuga, papa ripio.", "img": "img/perro2.webp" }
             ]
         },
         {
             "nombre": "Cafetería",
+            "icono": "☕",
             "img": "img/cat-cafeteria.svg",
             "productos": [
                 { "nombre": "Capuchino", "precio": "$5.000", "desc": "Café con espuma de leche cremosa.", "img": "img/capuchino.svg" },
-                { "nombre": "Café Latte", "precio": "$4.500", "desc": "Café suave con leche.", "img": "img/cafe-latte.svg" }
+                { "nombre": "Café Americano 1", "precio": "$3.000", "desc": "Café suave .", "img": "img/cafe-latte.svg" },
+                { "nombre": "Café Americano 2", "precio": "$3.500", "desc": "Café suave .", "img": "img/cafe-latte.svg" },
+                { "nombre": "Café con leche", "precio": "$5.000", "desc": "Café con espuma de leche cremosa.", "img": "img/capuchino.svg" },
+                { "nombre": "Café Latte", "precio": "$4.500", "desc": "Café suave con leche.", "img": "img/cafe-latte.svg" },
+                { "nombre": "Café Expreso", "precio": "$6.000", "desc": "Café suave .", "img": "img/cafe-latte.svg" }
+            ]
+        },
+        {
+            "nombre": "Postre y Michelada",
+            "icono": "🍧",
+            "img": "img/cat-postres.webp",
+            "productos": [
+                { "nombre": "Ensalada de Frutas Sencilla", "precio": "$15.000", "desc": "Papaya, Uva, Banano, Manzana, Kiwi, Melón, Fresa, Pera, Piña.", "img": "img/cat-postres.webp" },
+                { "nombre": "Ensalada de Frutas", "precio": "$20.000", "desc": "Papaya, Uva, Banano, Manzana, Kiwi, Leche Condesada, Helado, Melón, Fresa, Pera, Piña, Queso.", "img": "img/cat-postres.webp" },
+                { "nombre": "Micheladas", "precio": "$14.000", "desc": "Micheladas de Frutos Rojos, De Frutos Verdes, Maracuya, Tamarindo.", "img": "img/nichelada.webp" }
+            ]
+        },
+        {
+            "nombre": "Helados y Malteada",
+            "icono": "🍦",
+            "img": "img/cat-helados.webp",
+            "productos": [
+                { "nombre": "Cono 1 Bola", "precio": "$5.000", "desc": "Cremosa con crema chantilly.", "img": "img/malteada.jpg" },
+                { "nombre": "Cono 2 Bolas", "precio": "$10.000", "desc": "Dos Sabores de Helados.", "img": "img/malteada.jpg" },
+                { "nombre": "Cono 3 Bolas", "precio": "$15.000", "desc": "Tres Sabores de Helados.", "img": "img/malteada.jpg" },
+                { "nombre": "Malteada Sencilla", "precio": "$16.000", "desc": "Cremosa con crema chantilly.", "img": "img/cat-helados.webp" },
+                { "nombre": "Batidos a Base de Helados", "precio": "$18.000", "desc": "3 sabores a elegir.", "img": "img/cat-helados.webp" }
             ]
         }
         // Puedes seguir agregando "Perros", "Asados" y "Cafetería" siguiendo esta misma estructura.
@@ -83,12 +142,13 @@ const menuData = {
     
           // Banner Promocionales
     "banners": [
-        "img/cat-cafeteria.svg",
+        "img/cat-sandwich.webp",
         "img/pechuga_asada.webp",
-        "img/mandarina.svg",
+        "img/mandarina.webp",
         "img/s1.webp",
-        "img/naranja.svg",
-        "img/arepas.WebP"
+        "img/naranja.webp",
+        "img/arepas.webp",
+        "img/cat-cafeteria.svg"
     ]
     
 };

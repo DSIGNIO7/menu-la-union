@@ -152,11 +152,20 @@ body {
 }
 
 .category-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 30px 15px 15px 15px; /* Alineado con el margen de las cards (15px) */
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    /*font-weight: 700; */
     color: var(--green-forest);
-    border-left: 4px solid var(--orange-fresh); /* Detalle visual premium */
+    border-bottom: 4px solid var(--orange-fresh); /* Detalle visual premium */
     padding-left: 10px;
+}
+
+.category-icon {
+    font-size: 1.2rem; /* Tamaño del emoji */
+    margin-right: -5px; /* Ajuste fino */
 }
 
 /* 3. Modal "Bottom Sheet" Premium (Tipo Rappi) */

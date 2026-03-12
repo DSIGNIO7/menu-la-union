@@ -16,13 +16,13 @@ function init() {
     renderMenu();
     initHeroSlider();
     setupEventListeners();
-    // Inicia la musica de fondo
-    const music = document.getElementById('bg-music');
-    music.volume = 0.3; // Volumen suave de fondo
+    const ambientSound = new Audio('audio/welcome.wav');
+    ambientSound.volume = 0.1; // Volumen bajo para que sea elegante
+    ambientSound.loop = true;
 
-    // Intentar reproducir cuando el usuario haga su primer click
-    document.body.addEventListener('click', () => {
-        music.play();
+    // El sonido solo puede iniciar tras la primera interacción del usuario (política de navegadores)
+    document.addEventListener('click', () => {
+        ambientSound.play();
     }, { once: true });
 }
 

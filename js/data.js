@@ -5,10 +5,31 @@ const menuData = {
             "icono": "🥤",
             "img": "img/cat-jugos.webp",
             "productos": [
-                { "nombre": "Zapote", "precio": "$8.000", "desc": "Jugo 100% natural y fresco.", "img": "img/zapote.webp" },
-                { "nombre": "Níspero", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
+                { "nombre": "Zapote", "precio": "$8.000", "desc": "Jugo 100% natural y fresco, una joya tropical que parece un postre en vaso..", "img": "img/zapote.webp" },
+                { "nombre": "Níspero", "precio": "$8.000", "desc": "Delicioso sabor tropical, con notas de caramelo natural, único y refrescante..", "img": "img/nispero.webp" },
+                { "nombre": "Guanabana", "precio": "$8.000", "desc": "Blanca, espesa y llena de fibra natural. La reina de la frescura.", "img": "img/guanabana.webp" },
+                { "nombre": "fresa", "precio": "$8.000", "desc": "Rojas y jugosas, batidas al momento para conservar todo su aroma.", "img": "img/nispero.webp" },
+                { "nombre": "Naranja", "precio": "$7.000", "desc": "100% fruta natural, recién exprimido.", "img": "img/naranja.webp" },
+                { "nombre": "Limonada Natural", "precio": "$7.000", "desc": "Refrescante toque cítrico, Cítricos recién exprimidos con el equilibrio perfecto entre acidez y dulzor.", "img": "img/nispero.webp" },
+                { "nombre": "Mandarina", "precio": "$10.000", "desc": "100% fruta natural, recién exprimido.", "img": "img/mandarina.webp" },
+                { "nombre": "Pera", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
+                { "nombre": "Manzana", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
+                { "nombre": "Cerelac", "precio": "$10.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
+                { "nombre": "Nestum", "precio": "$8.000", "desc": "Delicioso sabor tropical.", "img": "img/nispero.webp" },
                 { "nombre": "Milo", "precio": "$7.000", "desc": "Cremosa y refrescante.", "img": "img/milo.webp" },
-                { "nombre": "Limonada Natural", "precio": "$7.000", "desc": "Refrescante toque cítrico.", "img": "img/naranja.webp" }
+                { "nombre": "Mora", "precio": "$7.000", "desc": "Recogida en su punto exacto de madurez para un sabor intenso y antioxidante.", "img": "img/nispero.webp" },
+                { "nombre": "Lulo", "precio": "$10.000", "desc": "El toque ácido y exótico que reinicia tu paladar. ¡Pídela bien fría!.", "img": "img/mandarina.webp" },
+                { "nombre": "Maracuyá", "precio": "$7.000", "desc": "Refrescante toque cítrico, en una versión vibrante y refrescante.", "img": "img/nispero.webp" },
+                { "nombre": "Tomate de Arbol", "precio": "$10.000", "desc": "Sabor místico y nutritivo, perfecto para subir las defensas..", "img": "img/mandarina.webp" },
+                { "nombre": "Mango", "precio": "$7.000", "desc": "Pulpa seleccionada de mangos maduros, una explosión de sol en tu boca.", "img": "img/nispero.webp" },
+                { "nombre": "Curuba", "precio": "$10.000", "desc": "Exquisitez andina con una textura suave que te encantará.", "img": "img/mandarina.webp" },
+                { "nombre": "Piña Natural", "precio": "$7.000", "desc": "Hidratación natural garantizada.", "img": "img/nispero.webp" },
+                { "nombre": "Tamarido", "precio": "$10.000", "desc": "Delicioso sabor tropical.", "img": "img/mandarina.webp" },
+                { "nombre": "Melón", "precio": "$7.000", "desc": "Pura agua frutal, la opción más ligera para los días de calor.", "img": "img/nispero.webp" },
+                { "nombre": "Papaya", "precio": "$10.000", "desc": "Suave, digestiva y con ese color naranja que alegra el día.", "img": "img/mandarina.webp" },
+                { "nombre": "Guayaba", "precio": "$7.000", "desc": "Tradición costeña pura, ideal para acompañar tus comidas pesadas.", "img": "img/nispero.webp" },
+                { "nombre": "Banano", "precio": "$7.000", "desc": "Refrescante toque cítrico.", "img": "img/nispero.webp" },
+                { "nombre": "Borojó", "precio": "$7.000", "desc": "Refrescante toque cítrico.", "img": "img/naranja.webp" }
             ]
         },
         {
@@ -16,8 +37,8 @@ const menuData = {
             "icono": "🥭",
             "img": "img/cat-combinados.webp",
             "productos": [
-                { "nombre": "Limonada Cerezada", "precio": "$9.000", "desc": "Combinación refrescante con cereza.", "img": "img/l-cerezada.webp" },
-                { "nombre": "Limonada de Coco", "precio": "$10.000", "desc": "Cremosa y refrescante.", "img": "img/guanabana.webp" },
+                { "nombre": "Limonada Cerezada", "precio": "$9.000", "desc": "Combinación refrescante de limón y cerezas dulces.", "img": "img/l-cerezada.webp" },
+                { "nombre": "Limonada de Coco", "precio": "$10.000", "desc": "Cremosa, refrescante, tropical y playera. Te sentirás frente al mar en cada sorbo.", "img": "img/guanabana.webp" },
                 { "nombre": "Milo", "precio": "$7.000", "desc": "Cremosa y refrescante.", "img": "img/milo.webp" },
                 { "nombre": "Borojó Completo", "precio": "$9.000", "desc": "Kola granulada, vino sansón, miel y más.", "img": "img/borojo-comp.webp" }
             ]
@@ -47,7 +68,7 @@ const menuData = {
                 { "nombre": "Patacón Mini", "precio": "$15.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, queso costeño, lechuga, salsas.", "img": "img/patacon.webp" },
                 { "nombre": "Arepa Rellena", "precio": "$14.000", "desc": "Pollo, carne, chorizo, butifarra, chicharrón, huevo de codorniz, queso costeño, lechuga, salsas.", "img": "img/arepas.webp" },
                 { "nombre": "Arepa Loca", "precio": "$22.000", "desc": "Pollo a la plancha, carne a la plancha, chicharón, tocineta, huevo de codorniz, chorizo, butifarra, salchicha super, queso costeño, lechuga, salsa.", "img": "img/arepas.webp" },
-                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Pollo, carne, chorizo, butifarra, queso costeño, lechuga, salsas.", "img": "img/patacon.webp" },
+                { "nombre": "Patacón Relleno", "precio": "$25.000", "desc": "Plátano verde crocante, Pollo, carne, chorizo, butifarra, queso costeño, lechuga, salsas.", "img": "img/patacon.webp" },
                 { "nombre": "Porción de papas", "precio": "$7.000", "desc": "Porción de papas a la francesa.", "img": "img/arepas.webp" },
                 { "nombre": "Porción de Patacón", "precio": "$7.000", "desc": "Porción de Patacones.", "img": "img/arepas.webp" }
             ]
@@ -107,9 +128,9 @@ const menuData = {
             "icono": "☕",
             "img": "img/cat-cafeteria.svg",
             "productos": [
-                { "nombre": "Capuchino", "precio": "$5.000", "desc": "Café con espuma de leche cremosa.", "img": "img/capuchino.svg" },
+                { "nombre": "Capuchino", "precio": "$5.000", "desc": "Café con espuma de leche y canela.", "img": "img/capuchino.svg" },
                 { "nombre": "Café Americano 1", "precio": "$3.000", "desc": "Café suave .", "img": "img/cafe-latte.svg" },
-                { "nombre": "Café Americano 2", "precio": "$3.500", "desc": "Café suave .", "img": "img/cafe-latte.svg" },
+                { "nombre": "Café Americano 2", "precio": "$3.500", "desc": "Café colombiano recién colado.", "img": "img/cafe-latte.svg" },
                 { "nombre": "Café con leche", "precio": "$5.000", "desc": "Café con espuma de leche cremosa.", "img": "img/capuchino.svg" },
                 { "nombre": "Café Latte", "precio": "$4.500", "desc": "Café suave con leche.", "img": "img/cafe-latte.svg" },
                 { "nombre": "Café Expreso", "precio": "$6.000", "desc": "Café suave .", "img": "img/cafe-latte.svg" }

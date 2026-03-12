@@ -16,6 +16,14 @@ function init() {
     renderMenu();
     initHeroSlider();
     setupEventListeners();
+    // Inicia la musica de fondo
+    const music = document.getElementById('bg-music');
+    music.volume = 0.3; // Volumen suave de fondo
+
+    // Intentar reproducir cuando el usuario haga su primer click
+    document.body.addEventListener('click', () => {
+        music.play();
+    }, { once: true });
 }
 
 /**

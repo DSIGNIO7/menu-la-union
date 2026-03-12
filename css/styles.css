@@ -18,52 +18,76 @@ body {
 
       /* Animación en bienvenida */
 /* Fondo Animado "Efecto Jugo" */
+/* Splash Screen Profesional */
 #splash-screen {
     position: fixed;
     inset: 0;
-    z-index: 9999;
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #0c3507; /* Verde Forest de tu marca */
     overflow: hidden;
-    background: #ff8c00; /* Naranja base */
 }
 
+/* Efecto de fondo "Líquido Refrescante" */
 .splash-bg {
     position: absolute;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, #ffb347 0%, #ff8c00 70%);
-    animation: liquidMove 10s infinite alternate;
-    z-index: -1;
+    background: radial-gradient(circle, #ff8c00 10%, #0c3507 70%);
+    opacity: 0.4;
+    animation: liquidRotate 15s infinite linear;
 }
 
-@keyframes liquidMove {
-    0% { transform: translate(-10%, -10%) rotate(0deg); }
-    100% { transform: translate(10%, 10%) rotate(10deg); }
+@keyframes liquidRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-/* Animación de Escritura */
+.splash-content {
+    text-align: center;
+    z-index: 10;
+    max-width: 80%;
+}
+
+.pulse-logo {
+    width: 140px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(255,140,0,0.5));
+    animation: bounceIn 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .typing-text {
-    color: white;
-    font-size: 1.8rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid white;
+    border-right: 3px solid #ff8c00;
     width: 0;
-    margin: 15px auto;
-    animation: typing 2s steps(20) forwards, blink 0.7s infinite;
+    animation: typing 2.5s steps(22) forwards, blink 0.8s infinite;
 }
 
-.fade-in-text {
+.fade-in-p {
     color: #fcdb9e;
+    font-size: 1.1rem;
+    margin-top: 10px;
     opacity: 0;
-    animation: fadeIn 1s ease forwards 2s; /* Empieza después de la escritura */
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease forwards 2.8s; /* Aparece tras el título */
 }
 
 @keyframes typing { from { width: 0; } to { width: 100%; } }
 @keyframes blink { 50% { border-color: transparent; } }
-@keyframes fadeIn { to { opacity: 1; } }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
 
 
 /* Hero Banner */

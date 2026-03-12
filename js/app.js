@@ -68,7 +68,7 @@ function renderMenu() {
                     <p>${prod.desc}</p>
                     <div class="product-meta">
                         <span class="price-tag">${prod.precio}</span>
-                        <span class="add-btn">+</span>
+                        <span class="add-btn"></span>
                     </div>
                 </div>
             `;

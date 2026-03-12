@@ -29,12 +29,12 @@ const menuData = {
             "productos": [
                 { "nombre": "Q'Unión", "precio": "$16.000", "desc": "Pan cubano, salsa de la casa, carne, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/qbano.webp" },
                 { "nombre": "Cubano", "precio": "$13.000", "desc": "Pan cubano, salsa de la casa, pollo, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/cubano.webp" },
-                { "nombre": "Mini-Cubano", "precio": "$10.000", "desc": "Pan tajado, salsa de la casa, pollo, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/cubano.svg" },
+                { "nombre": "Mini-Cubano", "precio": "$10.000", "desc": "Pan tajado, salsa de la casa, pollo, quesillo, jamón, Lechuga, Tomate, Cebolla.", "img": "img/qbano.svg" },
                 { "nombre": "Mini-Cubano Unión", "precio": "$13.000", "desc": "Pan tajado, salsa de la casa, carne, quesillo, jamón, Lechuga, Tomate y Cebolla.", "img": "img/qbano.svg" },
                 { "nombre": "Especial", "precio": "$4.500", "desc": "Pan tajado, mantequilla, jamón, queso, mortadela.", "img": "img/especial.webp" },
                 { "nombre": "Sencillo", "precio": "$3.500", "desc": "Pan tajado, mantequilla, mortadela y queso.", "img": "img/sencillo.webp" },
                 { "nombre": "Jamón Queso", "precio": "$4.000", "desc": "Pan tajado, mantequilla, jamón y queso.", "img": "img/jamon.webp" },
-                { "nombre": "Solo Mortadela", "precio": "$3.500", "desc": "Pan tajado, mantequilla, Doble porción de mortadela.", "img": "img/cubano.svg" },
+                { "nombre": "Solo Mortadela", "precio": "$3.500", "desc": "Pan tajado, mantequilla, Doble porción de mortadela.", "img": "img/qbano.svg" },
                 { "nombre": "Solo Jamón", "precio": "$4.000", "desc": "Pan tajado, mantequilla, Doble porción de Jamón.", "img": "img/qbano.svg" },
                 { "nombre": "Solo Queso", "precio": "$4.000", "desc": "Pan tajado, mantequilla, Doble porción de Queso.", "img": "img/s-queso.webp" }
             ]
@@ -130,9 +130,9 @@ const menuData = {
             "icono": "🍦",
             "img": "img/cat-helados.webp",
             "productos": [
-                { "nombre": "Cono 1 Bola", "precio": "$5.000", "desc": "Cremosa con crema chantilly.", "img": "img/malteada.jpg" },
-                { "nombre": "Cono 2 Bolas", "precio": "$10.000", "desc": "Dos Sabores de Helados.", "img": "img/malteada.jpg" },
-                { "nombre": "Cono 3 Bolas", "precio": "$15.000", "desc": "Tres Sabores de Helados.", "img": "img/malteada.jpg" },
+                { "nombre": "Cono 1 Bola", "precio": "$5.000", "desc": "Cremosa con crema chantilly.", "img": "img/h-1b.webp" },
+                { "nombre": "Cono 2 Bolas", "precio": "$10.000", "desc": "Dos Sabores de Helados.", "img": "img/h-2b.webp" },
+                { "nombre": "Cono 3 Bolas", "precio": "$15.000", "desc": "Tres Sabores de Helados.", "img": "img/h-3b.webp" },
                 { "nombre": "Malteada Sencilla", "precio": "$16.000", "desc": "Cremosa con crema chantilly.", "img": "img/cat-helados.webp" },
                 { "nombre": "Batidos a Base de Helados", "precio": "$18.000", "desc": "3 sabores a elegir.", "img": "img/cat-helados.webp" }
             ]
